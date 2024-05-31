@@ -7,7 +7,7 @@
     "name": "TechErick Windows Container EGG",
     "author": "admin@termuxos.ovh",
     "description": "ISOs disponiveis ",
-    "image": "ghcr.io/thislaynos/windows:latest",
+    "image": "ghcr.io/thislaynos/windows:2.0",
     "startup": "/usr/bin/tini -s /run/entry.sh --cap-add NET_ADMIN",
     "config": {
         "files": "{}",
@@ -18,7 +18,7 @@
     "scripts": {
         "installation": {
             "script": "#/bin/ash\r\n\r\n# A instalação pode ser personalizada aqui, se necessário.\r\n\r\necho 'Instalação completa'\r\nexit 0",
-            "container": "ghcr.io/thislaynos/windows:latest",
+            "container": "ghcr.io/thislaynos/windows:2.0",
             "entrypoint": "ash"
         }
     },
