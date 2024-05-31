@@ -8,7 +8,7 @@
     "author": "admin@termuxos.ovh",
     "description": "ISOs disponiveis ",
     "image": "ghcr.io/dockur/windows:3.11",
-    "startup": "/usr/bin/tini -s /run/entry.sh",
+    "startup": "/usr/bin/tini -s /run/entry.sh --cap-add NET_ADMIN",
     "config": {
         "files": "{}",
         "startup": "{\r\n    \"done\": \"change this part\"\r\n}",
